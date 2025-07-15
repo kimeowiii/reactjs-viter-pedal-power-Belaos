@@ -4,20 +4,18 @@ import MountainBiking from "./components/pages/mountain-biking/MountainBiking";
 import RoadBiking from "./components/pages/road-biking/RoadBiking";
 import PageNotFound from "./components/partials/PageNotFound";
 function App() {
-
-
   return (
     <>
       <Router>
         <Routes>
-          <Route path="*" element={<PageNotFound/>} />
+          <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/road-biking" element={<RoadBiking />} />
           <Route path="/mountain-biking" element={<MountainBiking />} />
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
